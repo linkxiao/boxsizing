@@ -1,0 +1,156 @@
+html * {
+  max-height:1000000px;
+}
+
+@charset "utf-8";
+/* CSS Document */
+// @font-face {
+//   font-family: icomoon;
+//   src: url(fonts/font.eot);
+//   src: url(fonts/font.woff) format('woff'),
+//     url(fonts/font.ttf) format('truetype'),
+//     url(fonts/font.svg#fontName) format(svg);
+// }
+// // 针对于icon-font设置的icon
+// [class^="icon-"],[class*=" icon-"] {
+//     font-family: 'icomoon';
+//     speak: none;
+//     font-style: normal;
+//     font-weight: normal;
+//     font-variant: normal;
+//     font-size: 2em;
+//     text-transform: none;
+//     line-height: 1em;
+//     vertical-align: middle;
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//   }
+// .icon-icon_1:before {
+//     content: "\21";
+// }
+// .icon-icon_2:before {
+//     content: "\22";
+//     font-size: 0.95em;
+//     opacity:0.96;
+//     position: relative;
+//     top: -3px;
+//     margin-right: 2px;
+// }
+// .icon-icon_3:before {
+//     content: "\23";
+//     font-size: 1.15em;
+//     position:relative;
+//     top:1px;
+//     opacity:0.98;
+// }
+// .icon-icon_4:before {
+//     content: "\24";
+//     font-size: 1.12em;
+//     opacity:0.98;
+// }
+// .icon-icon_5:before {
+//     content: "\25";
+//     font-size: 1.1em;
+//     opacity:0.96;
+//     margin-right: 5px;
+// }
+// .icon-icon_6:before {
+//     content: "\26";
+//     font-size: 1.2em;
+//     opacity:0.98;
+//     position:relative;
+//     top:1px;
+//
+// }
+// .icon-icon_7:before {
+//     content: "\27";
+//     font-size: 1.2em;
+//     opacity:0.98;
+//     position:relative;
+//     top:1px;
+// }
+// .icon-logo:before {
+//     content: "\28";
+//     opacity:0.98;
+//     font-size: 1.2em;
+// }
+
+
+
+
+
+//医院模块
+.commonBlock(@c){
+    width:48%;
+    box-sizing: border-box;
+    display:@lineblock;
+    height:75px;
+    padding-left: 13px;
+    padding-top: 10px;
+    color:@c;
+}
+
+// 模块间隔
+.space-width{
+    //display:@lineblock;
+    width:3%;
+    height:75px;
+    float:left;
+}
+.maxWidth(@w){
+    max-width: @w;
+    overflow:@hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+// 针对png作背景图的方式设置icon
+.icon-1{
+    background-image: url("../img/zryh/icon-1.png");
+    right:5px;
+    bottom:0;
+    opacity: 0.2;
+}
+.icon-2{
+    background-image: url("../img/zryh/icon-2.png");
+    background-size: 100% 100%;
+    right:5px;
+    bottom:0;
+}
+.icon-3{
+    background-image: url("../img/zryh/icon-3.png");
+    right:5px;
+    bottom:0;
+}
+.icon-4{
+    background-image: url("../img/zryh/icon-4.png");
+    right:5px;
+    bottom:0;
+}
+.icon-5{
+    background-image: url("../img/zryh/icon-5.png");
+    right:5px;
+    height: 36px;
+    bottom:0;
+}
+.icon-6{
+    background-image: url("../img/sdph/icon-6.png");
+    right: 5px;
+    bottom: 0;
+}
+.btn-back{
+  width: 12px;
+  height: 20px;
+  display: inline-block;
+  //position:relative;
+  // top:2px;
+  // left:0;
+  background-image: url("../common/img/icon/icon-arrow.png");
+  background-size: 100% 100%;
+}
+.btn-enter{
+  display:inline-block;
+  width:40px;
+  height:40px;
+  background-image: url("../common/img/icon/icon-enter.png");
+  background-size: 100% 100%;
+}
